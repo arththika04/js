@@ -1,6 +1,11 @@
 
- function factorial(num) {
+export function factorial(num) {
+  if (num === 0 || num === 1)   
+  if (num < 0) {
+    return undefined;
+  }
 
+  let result = 1;
   for (let i = 2; i <= num; i++) {
     result = i;
   }
