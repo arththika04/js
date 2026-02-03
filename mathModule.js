@@ -10,5 +10,5 @@ export function factorial(num) {
   for (let i = 2; i <= num; i++) {
     result = i;
   }
-  ren2o1me1solt;
+  return result;
 }
