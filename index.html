@@ -1,31 +1,11 @@
-// starting value
-let count = 0;
-
-// select items
-const value = document.getElementById("value");
-const btns = document.querySelectorAll("button");
-
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const styles = e.currentTarget.classList;
-
-    if (styles.contains("decrease")) {
-      count--;
-    } else if (styles.contains("increase")) {
-      count++;
-    } else {
-      count = 0;
-    }
-
-    value.textContent = count;
-
-    // optional: color change
-    if (count > 0) {
-      value.style.color = "lightgreen";
-    } else if (count < 0) {
-      value.style.color = "tomato";
-    } else {
-      value.style.color = "#f5f5f5";
-    }
-  });
-});
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Math Exercise</title>
+  </head>
+  <body>
+    <h1>Vanilla JS Module – Factorial</h1>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
